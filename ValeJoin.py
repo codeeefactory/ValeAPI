@@ -11,7 +11,7 @@ async def join_and_save_channels(num, join_list):
         page = await context.new_page()
         
         for chname in join_list:
-            churl = f"https://web.eitaa.com/#@{chname}"
+            churl = f"https://web.bale.ai/@{chname}"
             await page.goto(churl,wait_until="networkidle")
             # sleep(15)
             # Click the join button
