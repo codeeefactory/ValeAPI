@@ -20,6 +20,8 @@ from auth import save
 from playwright.async_api import async_playwright
 from asyncio import sleep as async_sleep
 
+import videoapi
+
 app = FastAPI()
 
 
@@ -52,7 +54,7 @@ async def shutdown_db():
 
 class AuthRequest(BaseModel):
     num: str
-
+    count:str
 
 class OTPRequest(BaseModel):
     session_id: str
@@ -64,7 +66,7 @@ class withoutnum(BaseModel):
 async def start_auth(background_tasks: BackgroundTasks, request: AuthRequest):
     try:
         
-        background_tasks.add_task(save, request.num)
+        background_tasks.add_task(save,request.count,request.num)
         return {"message": "OTP sent to your phone number"}
     
         # await auth_instance.save(request.num)
@@ -150,14 +152,14 @@ async def start_auth(background_tasks: BackgroundTasks, request: AuthRequest):
 
 #     except Exception as e:
 #         raise HTTPException(status_code=500, detail=str(e))
-# @app.post("/get_video/")
-# async def get_vedio(background_tasks: BackgroundTasks, request: ScrapingRequest):
-#     try:
-#         background_tasks.add_task(getvideo.getmedia, request.num, request.chlist)
-#         return {f"get media from {request.chlist} start"}
+@app.post("/get_video/")
+async def get_vedio(background_tasks: BackgroundTasks, request: ScrapingRequest):
+    try:
+        background_tasks.add_task(videoapi.getvideo, request.num, request.chlist)
+        return {f"get media from {request.chlist} start"}
 
-#     except Exception as e:
-#         raise HTTPException(status_code=500, detail=str(e))
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
 # @app.post("/get_photo/")
 # async def get_photo(background_tasks: BackgroundTasks, request: ScrapingRequest):
 #     try:

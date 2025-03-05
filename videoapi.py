@@ -38,7 +38,7 @@ async def getvideo(num, chlist):
                content= page.locator("div.content")
                await content.click()
                 # while True:
-               videoloc=page.query_selector_all("video.media-video")
+               videoloc=page.query_selector_all("div.shared_icon__LNqMk")
                 # print(await videoloc);import pdb; pdb.set_trace()
                for v in await videoloc:
                   
@@ -49,7 +49,7 @@ async def getvideo(num, chlist):
     # Perform the action that initiates download
     # await page.get_by_text("Download file").click()
                         
-                        downloc=page.locator("button.btn-icon.tgico-download")
+                        downloc=page.locator("div.")
                         await downloc.click(force=True)
                         download = await download_info.value  # This will give you the download object
                         print(f"Download started: {download.suggested_filename}")

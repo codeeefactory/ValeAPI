@@ -32,7 +32,7 @@ async def getphoto(num, chlist):
              
                 download_path = f"{chname}/"
                 
-                churl = f"https://ble.ir/@{chname}"
+                churl = f"https://web.bale.ai/@{chname}"
                 await page.goto(churl)
                 await page.wait_for_load_state("networkidle")
                 # content= page.locator("div.content")

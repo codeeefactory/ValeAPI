@@ -10,10 +10,10 @@ from asyncio import run
 async def save(ctr,numb):
          
           
-          if os.path.exists(f"auth_state_{numb }.json"):
-               os.remove(f"auth_state_{numb }.json")
+          
           async   with   async_playwright() as p:
-         
+               if os.path.exists(f"auth_state_{numb }.json"):
+                    os.remove(f"auth_state_{numb }.json")
                browser =await  p.chromium.launch(headless=False)
                co=await browser.new_context()
                page = await co.new_page()
@@ -46,4 +46,4 @@ async def save(ctr,numb):
                     
 
                     
-run(save("Iran","9129252158"))
+# run(save("Iran","9129252158"))
