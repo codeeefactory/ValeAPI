@@ -22,7 +22,7 @@ async def slow_scroll_to_bottom(page, step=100, delay=0.1):
 
 async def getmsgs(join_list):
     mongo_db = MongoDB(uri="mongodb://localhost:27017", db_name="eitaa")
-    p=async_playwright().start()
+    p=await async_playwright().start()
     counter_types=[]
     counter_values=[]
     
@@ -56,7 +56,7 @@ async def getmsgs(join_list):
             "div", class_={"Text_text__0QjN9 TextMessage_text__ADtXW"})
 
         previously_extracted = set()
-        previously_extracted.update([x.get("data-post") for x in msgloc])
+        previously_extracted.update([x for x in msgloc])
         previously_extracted2 = set()
         previously_extracted2.update([x.text for x in txtloc])
 
@@ -89,7 +89,7 @@ async def getmsgs(join_list):
                 print(f"New Post Locator: {element_locator}")
     
                 msgins = Message(username=chname,
-                                link=f"https://ble.ir/{element_locator}",
+                                link=f"https://ble.ir/{chname}/{element_locator}",
                                 text=txtloct,crawldate=ctime())
                 await mongo_db.save_message(msgins)
                 print(f"New Message Text: {txtloct}")

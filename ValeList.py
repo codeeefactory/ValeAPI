@@ -136,14 +136,14 @@ async def start_auth(background_tasks: BackgroundTasks, request: AuthRequest):
 #         raise HTTPException(status_code=500, detail=str(e))
 
 
-# @app.post("/get_messages/")
-# async def get_messages(background_tasks: BackgroundTasks, request: withoutnum):
-#     try:
-#         background_tasks.add_task(getmsgs, request.chlist)
-#         return {f"get message from {request.chlist} start"}
+@app.post("/get_messages/")
+async def get_messages(background_tasks: BackgroundTasks, request: withoutnum):
+    try:
+        background_tasks.add_task(getmsgs, request.chlist)
+        return {f"get message from {request.chlist} start"}
 
-#     except Exception as e:
-#         raise HTTPException(status_code=500, detail=str(e))
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
 # @app.post("/count_messages/")
 # async def count_messages(background_tasks: BackgroundTasks, request: ScrapingRequest):
 #     try:
