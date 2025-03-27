@@ -59,29 +59,43 @@ async def get_channel(num):
                 a.append(page.url)
                 await page.wait_for_timeout(6000)
                 for x in a:
-                    b.append(str(x).replace("https://web.eitaa.com/#@",""))
+                    b.append(str(x).replace("https://web.bale.ai/#@",""))
                     
                 # print(b)
             for j in set(b):
                     
                     print(j)
                     page2=await context.new_page()
-                    await page2.goto(f"https://eitaa.com/{j}")
+                    await page2.goto(f"https://ble.ir/@{j}")
                     # sleep(2)
                     soup= BeautifulSoup(await page2.content(),features="html.parser")
                 
                 
                 
-                    name=soup.find("div",{"class":"etme_channel_info_header_title"}).text
-                    biogr=soup.find("div",{"class":"etme_channel_info_description"}).text
-                    msgloc = soup.find_all("div", attrs={"data-post": True})
-                    txtloc = soup.find_all(
-                        "div", class_={"etme_widget_message_text", "js-message_text"})
+                   
+                    name = soup.find("h1", {
+            "class": "Profile_name__pQglx"
+        }).text
+                    biogsel=page.locator("div.Profile_description__YTAr_")
+                    biog = biogsel.locator("div.Text_text__7_UOM")
+                    membercount=soup.find("div", {
+                        "class": "Profile_peer-count__WofG1"
+                    }).text
+                
+                    # msgloc=soup.find_all("span",class_="p")
 
-                    previously_extracted = set()
-                    previously_extracted.update([x.get("data-post") for x in msgloc])
-                    previously_extracted2 = set()
-                    previously_extracted2.update([x.text for x in txtloc])
+                    # previously_extracted = set()
+                    # previously_extracted.update([x for x in msgloc])
+                    # previously_extracted2 = set()
+                    # previously_extracted2.update([x.text for x in msgloc])
+                    print(name)
+                    bio= biog.locator("span.p")   
+
+                    bioglist=[x for x in await bio.all_text_contents()]
+                    
+
+                    print(bioglist)
+                    print(membercount)
 
                     while True:
 

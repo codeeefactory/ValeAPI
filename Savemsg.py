@@ -44,25 +44,25 @@ async def getmsgs(join_list):
         name = soup.find("h1", {
             "class": "Profile_name__pQglx"
         }).text
-        biog = page.locator("div.Text_text__7_UOM")
+        biogsel=page.locator("div.Profile_description__YTAr_")
+        biog = biogsel.locator("div.Text_text__7_UOM")
         membercount=soup.find("div", {
             "class": "Profile_peer-count__WofG1"
         }).text
        
-        msgloc=soup.find_all("span",class_="p")
+        # msgloc=soup.find_all("span",class_="p")
 
-        previously_extracted = set()
-        previously_extracted.update([x for x in msgloc])
-        previously_extracted2 = set()
-        previously_extracted2.update([x.text for x in msgloc])
+        # previously_extracted = set()
+        # previously_extracted.update([x for x in msgloc])
+        # previously_extracted2 = set()
+        # previously_extracted2.update([x.text for x in msgloc])
         print(name)
-        bio=biog.locator("span.p").text_content()
+        bio= biog.locator("span.p")   
 
-        bioglist=[]
-        for biot in bio :
-            bioglist.append(biot)
+        bioglist=[x for x in await bio.all_text_contents()]
+        
 
-        print(biog)
+        print(bioglist)
         print(membercount)
 
         while True:
@@ -73,35 +73,24 @@ async def getmsgs(join_list):
             await asyncio.sleep(2)
 
             new_content = await page.content()
-            soup = BeautifulSoup(new_content, "html.parser")
+            # soup = BeautifulSoup(new_content, "html.parser")
+            soup = BeautifulSoup(new_content, 'html.parser')
 
-            new_msgloc = soup.find_all("div", attrs={"data-post": True})
-            new_txtloc = soup.find_all(
-                "div",
-                class_={"etme_widget_message_text", "js-message_text"})
+# Find the div with the specific class
+            msgdiv = page.locator("div[class='Text_text__0QjN9TextMessage_text__ADtXW']")
+            msgtxt=msgdiv.locator("span.p")
+            photocapdiv = page.locator("div[class='Text_text__7_UOM Photo_caption__uXXa5']")
+            captxt=photocapdiv.locator("span.p")
+            span_texts = [[span for span in await msgtxt.all_text_contents()]+ [photocap for photocap in await captxt.all_text_contents()]]
+            print(span_texts)
 
-            new_post_ids = {x.get("data-post") for x in new_msgloc}
-            new_elements = new_post_ids - previously_extracted
 
-            if not new_elements:
-
-                print("No new elements found. Ending extraction.")
-                break
-
-            for x, z in zip(set(new_msgloc), set(new_txtloc)):
-                element_locator = x.get("data-post")
-                # element_locator = x.get("data-post")
-                txtloct = z.text
-                print(f"New Post Locator: {element_locator}")
-    
-                msgins = Message(username=chname,
+            msgins = Message(username=chname,
                                 link=f"https://ble.ir/{chname}/{element_locator}",
-                                text=txtloct,crawldate=ctime())
-                await mongo_db.save_message(msgins)
-                print(f"New Message Text: {txtloct}")
-                
-            previously_extracted.update(new_post_ids)
-        # chins=Channel(channel_name=name,bio=biog,username=f"@{chname}",counter_type= counter_types,counter_value=counter_values)
-        # await mongo_db.save_channel(chins)
+                                text=span_texts,crawldate=ctime())
+            await mongo_db.save_message(msgins)
+          
+            chins=Channel(channel_name=name,bio=biog,username=f"@{chname}",counter_type= counter_types,counter_value=counter_values)
+            await mongo_db.save_channel(chins)
 
-    await page.close()
+    await browser.close()

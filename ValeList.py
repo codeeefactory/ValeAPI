@@ -9,6 +9,7 @@ from pydantic import BaseModel
 # from countmsg import countmsgs
 # from getchat import get_channel
 # from getgp import get_group
+import FotoVale
 from ValeDB import MongoDB
 from Savemsg import getmsgs
 # import getmedia
@@ -160,14 +161,14 @@ async def get_vedio(background_tasks: BackgroundTasks, request: ScrapingRequest)
 
     except Exception as e:
         raise HTTPException(status_code=500, detail=str(e))
-# @app.post("/get_photo/")
-# async def get_photo(background_tasks: BackgroundTasks, request: ScrapingRequest):
-#     try:
-#         background_tasks.add_task(getphoto.getphoto, request.num, request.chlist)
-#         return {f"get photos from {request.chlist} start"}
+@app.post("/get_photo/")
+async def get_photo(background_tasks: BackgroundTasks, request: ScrapingRequest):
+    try:
+        background_tasks.add_task(FotoVale.getphoto, request.num, request.chlist)
+        return {f"get photos from {request.chlist} start"}
 
-#     except Exception as e:
-#         raise HTTPException(status_code=500, detail=str(e))
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
 # @app.post("/get_media/")
 # async def get_media(background_tasks: BackgroundTasks, request: ScrapingRequest):
 #     try:

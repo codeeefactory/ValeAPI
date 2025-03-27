@@ -37,23 +37,44 @@ async def getphoto(num, chlist):
                 await page.wait_for_load_state("networkidle")
                 # content= page.locator("div.content")
                 # await content.click()
-                medialoc=page.query_selector_all("img[alt='Photo Message']")
+                medialoc= await page.query_selector_all("div.NarrowBubble_Content__Y4ctl")
                 # photoloc=page.query_selector_all(".img.media-photo");import pdb; pdb.set_trace()
                 # print(await photoloc);import pdb; pdb.set_trace()
-                for f in await medialoc:
-                    
-                            sleep(1)
-                            print(await f.get_attribute("src"))
-                            src = await f.get_attribute("src")
+                
+            # Find all elements with class 'Photo_photo__+p+LW' within this div
+         
 
-                            os.system(f"""wget --output-document={chname}/{src}.jpeg "{src}" """)
-                            await page.evaluate("""
+            for f in  await medialoc.e():
+                    
+                              o=photo_elements.nth(f)
+                              print(f"Clicked on photo element {f+1}")
+                              async with page.expect_download() as download_info:
+                                   
+                                    await o.click()
+                                    sleep(3)
+                                    
+                                    await page.wait_for_selector("div.Photo_original__TSq5G")
+                                    await o.click()
+                                    
+        # Perform the action that initiates download
+        # await page.get_by_text("Download file").click()
+                              await page.wait_for_selector("IconButton_innerWrapper__rOOEI")
+                              
+                              downloc=page.locator("IconButton_innerWrapper__rOOEI")
+                              await downloc.click(force=True)
+                              download = await download_info.value  # This will give you the download object
+                              print(f"Download started: {download.suggested_filename}")
+                        
+                              await download.save_as(download_path + download.suggested_filename)
+                            
+                            
+            await page.evaluate("""
             document.documentElement.scrollTop = 0;
             document.body.scrollTop = 0;
         """)
         
         # Wait for the image element to be visible (adjust the selector as needed)
-                            await page.wait_for_selector("img", state="visible")
+                           
                             # sleep(2)
         # Perform the action that initiates download
         # await page.get_by_text("Download file").click()
@@ -77,4 +98,3 @@ async def getphoto(num, chlist):
             #         await page2.screenshot(type='jpeg',path=image_folder)
                     
             #         # Download the image
-run(getphoto("9129252158",["varzesh3"]))
