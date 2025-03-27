@@ -21,7 +21,7 @@ async def slow_scroll_to_bottom(page, step=100, delay=0.1):
 
 
 async def getmsgs(join_list):
-    mongo_db = MongoDB(uri="mongodb://localhost:27017", db_name="eitaa")
+    mongo_db = MongoDB(uri="mongodb://localhost:27017", db_name="Vale")
     p=await async_playwright().start()
     counter_types=[]
     counter_values=[]
@@ -44,23 +44,29 @@ async def getmsgs(join_list):
         name = soup.find("h1", {
             "class": "Profile_name__pQglx"
         }).text
-        biog = soup.find("div", {
-            "class": "Text_text__7_UOM"
-        }).text
+        biog = page.locator("div.Text_text__7_UOM")
         membercount=soup.find("div", {
             "class": "Profile_peer-count__WofG1"
         }).text
        
-        msgloc = soup.find_all("div", attrs={"data-post": True})
-        txtloc = soup.find_all(
-            "div", class_={"Text_text__0QjN9 TextMessage_text__ADtXW"})
+        msgloc=soup.find_all("span",class_="p")
 
         previously_extracted = set()
         previously_extracted.update([x for x in msgloc])
         previously_extracted2 = set()
-        previously_extracted2.update([x.text for x in txtloc])
+        previously_extracted2.update([x.text for x in msgloc])
+        print(name)
+        bio=biog.locator("span.p").text_content()
+
+        bioglist=[]
+        for biot in bio :
+            bioglist.append(biot)
+
+        print(biog)
+        print(membercount)
 
         while True:
+
 
             await page.evaluate("window.scrollTo(0, 0)")
 
@@ -95,7 +101,7 @@ async def getmsgs(join_list):
                 print(f"New Message Text: {txtloct}")
                 
             previously_extracted.update(new_post_ids)
-        chins=Channel(channel_name=name,bio=biog,username=f"@{chname}",counter_type= counter_types,counter_value=counter_values)
-        await mongo_db.save_channel(chins)
+        # chins=Channel(channel_name=name,bio=biog,username=f"@{chname}",counter_type= counter_types,counter_value=counter_values)
+        # await mongo_db.save_channel(chins)
 
     await page.close()
