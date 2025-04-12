@@ -1,0 +1,5 @@
+2025-04-11 07:01:51.273 [error] Failed to set sticky bit on /tmp/root-code-zsh: Error: ENOENT: no such file or directory, chmod '/tmp/root-code-zsh'
+2025-04-11 07:01:52.360 [error] Failed to set sticky bit on /tmp/root-code-zsh: Error: ENOENT: no such file or directory, chmod '/tmp/root-code-zsh'
+2025-04-11 07:01:55.362 [error] Failed to set sticky bit on /tmp/root-code-zsh: Error: ENOENT: no such file or directory, chmod '/tmp/root-code-zsh'
+2025-04-11 07:01:56.337 [error] Failed to set sticky bit on /tmp/root-code-zsh: Error: ENOENT: no such file or directory, chmod '/tmp/root-code-zsh'
+2025-04-11 07:02:24.263 [error] Failed to set sticky bit on /tmp/root-code-zsh: Error: ENOENT: no such file or directory, chmod '/tmp/root-code-zsh'

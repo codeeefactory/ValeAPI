@@ -21,12 +21,12 @@ async def slow_scroll_to_bottom(page, step=100, delay=0.1):
 
 
 async def getmsgs(join_list):
-    mongo_db = MongoDB(uri="mongodb://localhost:27017", db_name="Vale")
+    mongo_db = MongoDB(uri="mongodb://localhost:27017", db_name="ValeDB")
     p=await async_playwright().start()
     counter_types=[]
     counter_values=[]
     
-    browser = await p.chromium.launch(headless=False, timeout=50000)
+    browser = await p.chromium.launch(headless=True, timeout=50000)
     # context = await browser.new_context(
     #     storage_state=f"auth_state_{num}.json")
     result = {}
@@ -86,11 +86,12 @@ async def getmsgs(join_list):
 
 
             msgins = Message(username=chname,
-                                link=f"https://ble.ir/{chname}/{element_locator}",
+                               
+                                # ,
                                 text=span_texts,crawldate=ctime())
             await mongo_db.save_message(msgins)
           
-            chins=Channel(channel_name=name,bio=biog,username=f"@{chname}",counter_type= counter_types,counter_value=counter_values)
-            await mongo_db.save_channel(chins)
+    chins=Channel(channel_name=name,username=f"@{chname}",counter_type= counter_types,counter_value=counter_values)
+    await mongo_db.save_channel(chins)
 
     await browser.close()

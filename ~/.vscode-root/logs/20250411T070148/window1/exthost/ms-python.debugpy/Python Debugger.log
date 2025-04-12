@@ -1,0 +1,16 @@
+2025-04-11 07:02:23.794 [info] Resolving launch configuration with substituted variables
+2025-04-11 07:02:23.858 [info] DAP Server launched with command: /root/ValeAPI/bin/python /root/.vscode/extensions/ms-python.debugpy-2025.6.0-linux-x64/bundled/libs/debugpy/adapter
+2025-04-11 07:02:24.076 [info] Received 'debugpySockets' event from debugpy.
+2025-04-11 07:02:24.080 [info] Received 'debugpySockets' event from debugpy.
+2025-04-11 07:02:24.080 [info] Received 'debugpySockets' event from debugpy.
+2025-04-11 07:02:26.610 [info] Received 'debugpySockets' event from debugpy.
+2025-04-11 07:02:52.020 [info] Received 'debugpySockets' event from debugpy.
+2025-04-11 07:02:52.024 [info] Received 'debugpySockets' event from debugpy.
+2025-04-11 07:03:39.232 [info] Resolving launch configuration with substituted variables
+2025-04-11 07:03:39.238 [info] DAP Server launched with command: /root/ValeAPI/bin/python /root/.vscode/extensions/ms-python.debugpy-2025.6.0-linux-x64/bundled/libs/debugpy/adapter
+2025-04-11 07:03:39.444 [info] Received 'debugpySockets' event from debugpy.
+2025-04-11 07:03:39.447 [info] Received 'debugpySockets' event from debugpy.
+2025-04-11 07:03:39.447 [info] Received 'debugpySockets' event from debugpy.
+2025-04-11 07:03:40.393 [info] Received 'debugpySockets' event from debugpy.
+2025-04-11 07:04:53.511 [info] Received 'debugpySockets' event from debugpy.
+2025-04-11 07:04:53.515 [info] Received 'debugpySockets' event from debugpy.

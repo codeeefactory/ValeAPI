@@ -34,7 +34,7 @@ def hash_file(file_path):
             hasher.update(chunk)
     return hasher.hexdigest()
 async def get_group(num):
-        mongo_db = MongoDB(uri="mongodb://localhost:27017", db_name="eitaa")
+        mongo_db = MongoDB(uri="mongodb://localhost:27017", db_name="ValeDB")
         usersbio=[]
         users_usernames=[]
         p=await async_playwright().start()

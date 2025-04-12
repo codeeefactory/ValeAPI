@@ -1,0 +1,29 @@
+2025-04-11 07:01:53.889 [info] (Client) Pylance async client (2025.4.1) started with python extension (2025.4.0)
+2025-04-11 07:01:54.223 [info] [Info  - 7:01:54 AM] (5220) Server root directory: file:///root/.vscode/extensions/ms-python.vscode-pylance-2025.4.1/dist
+2025-04-11 07:01:54.224 [info] [Info  - 7:01:54 AM] (5220) Pylance language server 2025.4.1 (pyright version 1.1.398, commit 4f24eccc) starting
+2025-04-11 07:01:54.225 [info] [Info  - 7:01:54 AM] (5220) Starting service instance "ValeAPI" for workspace "/root/ValeAPI"
+2025-04-11 07:01:54.320 [info] [Info  - 7:01:54 AM] (5220) Setting environmentName for service "ValeAPI": "3.11.2 (ValeAPI venv)"
+2025-04-11 07:01:54.320 [info] [Info  - 7:01:54 AM] (5220) Setting pythonPath for service "ValeAPI": "/root/ValeAPI/bin/python"
+2025-04-11 07:01:54.321 [info] [Info  - 7:01:54 AM] (5220) No include entries specified; assuming /root/ValeAPI
+2025-04-11 07:01:54.322 [info] [Info  - 7:01:54 AM] (5220) Auto-excluding **/node_modules
+2025-04-11 07:01:54.322 [info] [Info  - 7:01:54 AM] (5220) Auto-excluding **/__pycache__
+2025-04-11 07:01:54.322 [info] [Info  - 7:01:54 AM] (5220) Auto-excluding **/.*
+2025-04-11 07:01:54.358 [info] [Info  - 7:01:54 AM] (5220) Assuming Python version 3.11.2.final.0
+2025-04-11 07:01:54.535 [info] [Info  - 7:01:54 AM] (5220) Auto-excluding /root/ValeAPI
+2025-04-11 07:01:54.536 [info] [Info  - 7:01:54 AM] (5220) No source files found.
+2025-04-11 07:01:54.572 [info] [Info  - 7:01:54 AM] (5220) Setting environmentName for service "ValeAPI": "3.11.2 (ValeAPI venv)"
+2025-04-11 07:01:54.572 [info] [Info  - 7:01:54 AM] (5220) Setting pythonPath for service "ValeAPI": "/root/ValeAPI/bin/python"
+2025-04-11 07:01:54.572 [info] [Info  - 7:01:54 AM] (5220) No include entries specified; assuming /root/ValeAPI
+2025-04-11 07:01:54.573 [info] [Info  - 7:01:54 AM] (5220) Auto-excluding **/node_modules
+2025-04-11 07:01:54.573 [info] [Info  - 7:01:54 AM] (5220) Auto-excluding **/__pycache__
+2025-04-11 07:01:54.573 [info] [Info  - 7:01:54 AM] (5220) Auto-excluding **/.*
+2025-04-11 07:01:54.608 [info] [Info  - 7:01:54 AM] (5220) Assuming Python version 3.11.2.final.0
+2025-04-11 07:01:54.677 [info] [Info  - 7:01:54 AM] (5220) Auto-excluding /root/ValeAPI
+2025-04-11 07:01:54.678 [info] [Info  - 7:01:54 AM] (5220) No source files found.
+2025-04-11 07:01:55.399 [info] [Info  - 7:01:55 AM] (5220) BG: Priority queue background worker(2) root directory: file:///root/.vscode/extensions/ms-python.vscode-pylance-2025.4.1/dist
+2025-04-11 07:01:55.400 [info] [Info  - 7:01:55 AM] (5220) BG: Priority queue background worker(2) started
+2025-04-11 07:01:55.706 [info] [Info  - 7:01:55 AM] (5220) BG: Indexer background runner(3) root directory: file:///root/.vscode/extensions/ms-python.vscode-pylance-2025.4.1/dist (index)
+2025-04-11 07:01:55.706 [info] [Info  - 7:01:55 AM] (5220) BG: Indexing(3) started
+2025-04-11 07:01:56.732 [info] [Info  - 7:01:56 AM] (5220) BG: scanned(3) 96 files over 1 exec env
+2025-04-11 07:01:56.996 [info] [Info  - 7:01:56 AM] (5220) BG: indexed(3) 96 files over 1 exec env
+2025-04-11 07:01:57.053 [info] [Info  - 7:01:57 AM] (5220) BG: Indexing finished(3).

@@ -8,8 +8,8 @@ class Channel(BaseModel):
     channel_name: Optional[str] = None
     bio: Optional[str] = None
     username: Optional[str] = None
-    counter_type: Optional[str] = None
-    counter_value: Optional[str] = None
+    counter_type: Optional[list] = None
+    counter_value: Optional[list] = None
     is_joined: Optional[bool] = None
 
 class ChannelInfo(BaseModel):
@@ -28,7 +28,7 @@ class Group(BaseModel):
 class Message(BaseModel):
     username: Optional[str] = None
     link: Optional[str] = None
-    text: Optional[str] = None
+    text: Optional[list] = None
     senddate: Optional[str] = None
     crawldate: Optional[str] = None
     

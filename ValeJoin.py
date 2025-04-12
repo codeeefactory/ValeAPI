@@ -31,6 +31,6 @@ async def join_and_save_channels(num, join_list):
 #     joinlist = input("Enter the channel name(s) you want to join: ").split()
 
 #     # MongoDB client
-#     mongo_db = MongoDB(uri="mongodb://localhost:27017", db_name="eitaa", collection_name="joined_channels")
+#     mongo_db = MongoDB(uri="mongodb://localhost:27017", db_name="ValeDB", collection_name="joined_channels")
 
 #     run(join_and_save_channels(num, joinlist, mongo_db))

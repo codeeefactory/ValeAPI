@@ -21,7 +21,7 @@ async def slow_scroll_to_bottom(page, step=100, delay=0.1):
 
 
 async def getmsgs(join_list):
-    mongo_db = MongoDB(uri="mongodb://localhost:27017", db_name="eitaa")
+    mongo_db = MongoDB(uri="mongodb://localhost:27017", db_name="ValeDB")
     p=await async_playwright().start()
     counter_types=[]
     counter_values=[]

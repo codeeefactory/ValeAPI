@@ -44,7 +44,7 @@ async def getphoto(num, chlist):
             # Find all elements with class 'Photo_photo__+p+LW' within this div
          
 
-            for f in  await medialoc.e():
+            for f in  await medialoc.elements():
                     
                               o=photo_elements.nth(f)
                               print(f"Clicked on photo element {f+1}")

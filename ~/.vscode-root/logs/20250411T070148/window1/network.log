@@ -1,0 +1,5 @@
+2025-04-11 07:02:04.950 [error] #1: https://www.vscode-unpkg.net/_gallery/ms-python/debugpy/latest - error GET Fetch timeout: 10000ms
+2025-04-11 07:02:04.950 [error] #2: https://www.vscode-unpkg.net/_gallery/ms-python/python/latest - error GET Fetch timeout: 10000ms
+2025-04-11 07:02:04.951 [error] #3: https://www.vscode-unpkg.net/_gallery/ms-python/vscode-pylance/latest - error GET Fetch timeout: 10000ms
+2025-04-11 16:32:13.104 [error] #120: https://main.vscode-cdn.net/extensions/chat.json - error GET Failed to fetch
+2025-04-11 20:37:18.513 [error] #172: https://main.vscode-cdn.net/extensions/chat.json - error GET Failed to fetch
