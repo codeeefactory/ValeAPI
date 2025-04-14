@@ -1,5 +1,3 @@
-2025-04-11 06:27:22.149 [info] update#setState idle
-2025-04-11 06:27:52.179 [info] update#setState checking for updates
-2025-04-11 06:27:52.309 [info] update#setState idle
-2025-04-11 06:28:04.469 [info] Extension host with pid 8680 exited with code: 0, signal: unknown.
-2025-04-11 06:28:04.492 [error] [UtilityProcess id: 1, type: fileWatcher, pid: 8661]: crashed with code 15 and reason 'killed'
+version https://git-lfs.github.com/spec/v1
+oid sha256:d004b84b9de0ef5e2b1a9c4b2bd8f7a3a39dd6058efb9628d7c9d43fa3fc998d
+size 397

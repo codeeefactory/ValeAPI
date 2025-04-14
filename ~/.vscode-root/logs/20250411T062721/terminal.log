@@ -1,12 +1,3 @@
-2025-04-11 06:28:47.531 [info] Latency measurements for local backend
-window<->ptyhost (message port): 0.90ms
-window<->ptyhostservice<->ptyhost: 3.80ms
-ptyhostservice<->ptyhost: 0.85ms []
-2025-04-11 06:28:53.092 [info] Latency measurements for local backend
-window<->ptyhost (message port): 0.70ms
-window<->ptyhostservice<->ptyhost: 1.40ms
-ptyhostservice<->ptyhost: 0.68ms []
-2025-04-11 06:28:53.641 [info] Latency measurements for local backend
-window<->ptyhost (message port): 0.60ms
-window<->ptyhostservice<->ptyhost: 1.80ms
-ptyhostservice<->ptyhost: 0.79ms []
+version https://git-lfs.github.com/spec/v1
+oid sha256:ab3cac6696c55f435fc6a9a63cad47a53c6fe73348d41ee8742916c9596e5c6d
+size 564

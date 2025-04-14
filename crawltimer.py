@@ -1,8 +1,3 @@
-import time
-import asyncio
-async def countdown(seconds, callback):
-    while seconds > 0:
-        # print(f"Time remaining: {seconds} seconds")
-        await asyncio.sleep(1)
-        seconds -= 1
-    await callback()  # Call the passed function after countdown
+version https://git-lfs.github.com/spec/v1
+oid sha256:73f14aa756eb24af3243bf671ade576d558e63804b67be9c4d8b2fd5699339c4
+size 261

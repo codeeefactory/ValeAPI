@@ -1,31 +1,3 @@
-2025-04-11 07:01:52.227 [info] Experiment 'pythonRecommendTensorboardExt' is active
-2025-04-11 07:01:52.227 [info] Experiment 'pythonTerminalEnvVarActivation' is active
-2025-04-11 07:01:52.227 [warning] Dir "/root/ValeAPI/.pixi/envs" is not watchable (directory does not exist)
-2025-04-11 07:01:52.227 [info] Python interpreter path: ./bin/python
-2025-04-11 07:01:52.327 [info] > pyenv which python
-2025-04-11 07:01:52.327 [info] cwd: .
-2025-04-11 07:01:54.108 [warning] Shell integration may not be active, environment activated may be overridden by the shell.
-2025-04-11 07:01:54.138 [info] > . ./bin/activate && echo 'e8b39361-0157-4923-80e1-22d70d46dee6' && python ~/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/printEnvVariables.py
-2025-04-11 07:01:54.138 [info] shell: zsh
-2025-04-11 07:01:54.183 [info] > /bin/python3 ~/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/printEnvVariables.py
-2025-04-11 07:01:54.183 [info] shell: zsh
-2025-04-11 07:01:54.250 [info] Starting Pylance language server.
-2025-04-11 07:01:55.227 [info] Prepending environment variable PATH in collection with /root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/deactivate/zsh:/root/ValeAPI/bin: {"applyAtShellIntegration":true,"applyAtProcessCreation":true}
-2025-04-11 07:01:55.228 [info] Setting environment variable VIRTUAL_ENV in collection to /root/ValeAPI {"applyAtShellIntegration":true,"applyAtProcessCreation":true}
-2025-04-11 07:01:55.228 [info] Prepending environment variable PS1 in collection with (ValeAPI)  {"applyAtShellIntegration":true,"applyAtProcessCreation":true}
-2025-04-11 07:01:55.228 [info] Setting environment variable VIRTUAL_ENV_PROMPT in collection to (ValeAPI)  {"applyAtShellIntegration":true,"applyAtProcessCreation":true}
-2025-04-11 07:01:56.230 [info] Send text to terminal: /bin/python3 /root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/printEnvVariablesToFile.py /root/.vscode/extensions/ms-python.python-2025.4.0-linux-x64/python_files/deactivate/zsh/envVars.txt
-2025-04-11 07:02:15.446 [info] Discover tests for workspace name: undefined - uri: /root/ValeAPI/~/.vscode-root/User/settings.json
-2025-04-11 07:02:16.297 [info] Discover tests for workspace name: undefined - uri: /root/ValeAPI/~/.vscode-root/User/settings.json
-2025-04-11 07:02:25.761 [info] Send text to terminal:  /usr/bin/env /root/ValeAPI/bin/python /root/.vscode/extensions/ms-python.debugpy-2025.6.0-linux-x64/bundled/libs/debugpy/adapter/../../debugpy/launcher 55943 -- /root/ValeAPI/auth.py 
-2025-04-11 07:03:07.788 [info] Discover tests for workspace name: ValeAPI - uri: /root/ValeAPI/auth.py
-2025-04-11 07:03:11.808 [info] Discover tests for workspace name: ValeAPI - uri: /root/ValeAPI/auth.py
-2025-04-11 07:03:14.340 [info] Discover tests for workspace name: ValeAPI - uri: /root/ValeAPI/auth.py
-2025-04-11 07:03:16.272 [info] Discover tests for workspace name: ValeAPI - uri: /root/ValeAPI/auth.py
-2025-04-11 07:03:21.514 [info] Discover tests for workspace name: ValeAPI - uri: /root/ValeAPI/auth.py
-2025-04-11 07:03:24.455 [info] Discover tests for workspace name: ValeAPI - uri: /root/ValeAPI/auth.py
-2025-04-11 07:03:26.107 [info] Discover tests for workspace name: ValeAPI - uri: /root/ValeAPI/auth.py
-2025-04-11 07:03:34.175 [info] Discover tests for workspace name: ValeAPI - uri: /root/ValeAPI/auth.py
-2025-04-11 07:03:38.610 [info] Discover tests for workspace name: ValeAPI - uri: /root/ValeAPI/auth.py
-2025-04-11 07:03:39.448 [info] Send text to terminal: 
-2025-04-11 07:03:39.650 [info] Send text to terminal:  cd /root/ValeAPI ; /usr/bin/env /root/ValeAPI/bin/python /root/.vscode/extensions/ms-python.debugpy-2025.6.0-linux-x64/bundled/libs/debugpy/adapter/../../debugpy/launcher 54467 -- /root/ValeAPI/auth.py 
+version https://git-lfs.github.com/spec/v1
+oid sha256:e4b48ce3c1a77eb67c9ad495208a648b92c2ff15650cdf744825868fa30654b6
+size 3811

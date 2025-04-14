@@ -1,8 +1,3 @@
-#!/root/ValeAPI/bin/python3
-# -*- coding: utf-8 -*-
-import re
-import sys
-from fastapi.cli import main
-if __name__ == '__main__':
-    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
-    sys.exit(main())
+version https://git-lfs.github.com/spec/v1
+oid sha256:869e4d46f95484cc53b6fed1027d5d791e0e274cb2e00ac801c8ab4ef78fa75e
+size 219

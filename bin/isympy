@@ -1,8 +1,3 @@
-#!/root/ValeAPI/bin/python3
-# -*- coding: utf-8 -*-
-import re
-import sys
-from isympy import main
-if __name__ == '__main__':
-    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
-    sys.exit(main())
+version https://git-lfs.github.com/spec/v1
+oid sha256:9a870249d683c1bd7fee4a7c8a3af2dcbd15a1673070a867709819e859a6f34e
+size 214

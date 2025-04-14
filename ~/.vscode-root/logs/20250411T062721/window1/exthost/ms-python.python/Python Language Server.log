@@ -1,31 +1,3 @@
-2025-04-11 06:28:50.929 [info] (Client) Pylance async client (2025.4.1) started with python extension (2025.4.0)
-2025-04-11 06:28:51.277 [info] [Info  - 6:28:51 AM] (9444) Server root directory: file:///root/.vscode/extensions/ms-python.vscode-pylance-2025.4.1/dist
-2025-04-11 06:28:51.278 [info] [Info  - 6:28:51 AM] (9444) Pylance language server 2025.4.1 (pyright version 1.1.398, commit 4f24eccc) starting
-2025-04-11 06:28:51.278 [info] [Info  - 6:28:51 AM] (9444) Starting service instance "ValeAPI" for workspace "/root/ValeAPI"
-2025-04-11 06:28:51.361 [info] [Info  - 6:28:51 AM] (9444) Setting environmentName for service "ValeAPI": "3.11.2 (ValeAPI venv)"
-2025-04-11 06:28:51.361 [info] [Info  - 6:28:51 AM] (9444) Setting pythonPath for service "ValeAPI": "/root/ValeAPI/bin/python"
-2025-04-11 06:28:51.361 [info] [Info  - 6:28:51 AM] (9444) No include entries specified; assuming /root/ValeAPI
-2025-04-11 06:28:51.362 [info] [Info  - 6:28:51 AM] (9444) Auto-excluding **/node_modules
-2025-04-11 06:28:51.363 [info] [Info  - 6:28:51 AM] (9444) Auto-excluding **/__pycache__
-2025-04-11 06:28:51.363 [info] [Info  - 6:28:51 AM] (9444) Auto-excluding **/.*
-2025-04-11 06:28:51.395 [info] [Info  - 6:28:51 AM] (9444) Assuming Python version 3.11.2.final.0
-2025-04-11 06:28:51.529 [info] [Info  - 6:28:51 AM] (9444) Auto-excluding /root/ValeAPI
-2025-04-11 06:28:51.530 [info] [Info  - 6:28:51 AM] (9444) No source files found.
-2025-04-11 06:28:51.569 [info] [Info  - 6:28:51 AM] (9444) Setting environmentName for service "ValeAPI": "3.11.2 (ValeAPI venv)"
-2025-04-11 06:28:51.569 [info] [Info  - 6:28:51 AM] (9444) Setting pythonPath for service "ValeAPI": "/root/ValeAPI/bin/python"
-2025-04-11 06:28:51.569 [info] [Info  - 6:28:51 AM] (9444) No include entries specified; assuming /root/ValeAPI
-2025-04-11 06:28:51.569 [info] [Info  - 6:28:51 AM] (9444) Auto-excluding **/node_modules
-2025-04-11 06:28:51.569 [info] [Info  - 6:28:51 AM] (9444) Auto-excluding **/__pycache__
-2025-04-11 06:28:51.570 [info] [Info  - 6:28:51 AM] (9444) Auto-excluding **/.*
-2025-04-11 06:28:51.606 [info] [Info  - 6:28:51 AM] (9444) Assuming Python version 3.11.2.final.0
-2025-04-11 06:28:51.683 [info] [Info  - 6:28:51 AM] (9444) Auto-excluding /root/ValeAPI
-2025-04-11 06:28:51.684 [info] [Info  - 6:28:51 AM] (9444) No source files found.
-2025-04-11 06:28:52.478 [info] [Info  - 6:28:52 AM] (9444) BG: Priority queue background worker(2) root directory: file:///root/.vscode/extensions/ms-python.vscode-pylance-2025.4.1/dist
-2025-04-11 06:28:52.479 [info] [Info  - 6:28:52 AM] (9444) BG: Priority queue background worker(2) started
-2025-04-11 06:28:52.706 [info] [Info  - 6:28:52 AM] (9444) BG: Indexer background runner(3) root directory: file:///root/.vscode/extensions/ms-python.vscode-pylance-2025.4.1/dist (index)
-2025-04-11 06:28:52.706 [info] [Info  - 6:28:52 AM] (9444) BG: Indexing(3) started
-2025-04-11 06:28:53.582 [info] [Info  - 6:28:53 AM] (9444) BG: scanned(3) 96 files over 1 exec env
-2025-04-11 06:28:56.410 [info] [Info  - 6:28:56 AM] (9444) BG: [IDX(3)] Long operation: index execution environment file:///root/ValeAPI (2516ms)
-2025-04-11 06:28:56.431 [info] [Info  - 6:28:56 AM] (9444) BG: [IDX(3)] Long operation: index packages file:///root/ValeAPI (2550ms)
-2025-04-11 06:28:56.431 [info] [Info  - 6:28:56 AM] (9444) BG: indexed(3) 96 files over 1 exec env
-2025-04-11 06:28:56.507 [info] [Info  - 6:28:56 AM] (9444) BG: Indexing finished(3).
+version https://git-lfs.github.com/spec/v1
+oid sha256:1ca60efa459dcec721ee9313854dbafaf1a6c261f7aedd9180a8afa7b825bf65
+size 3454

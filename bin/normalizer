@@ -1,8 +1,3 @@
-#!/root/ValeAPI/bin/python3
-# -*- coding: utf-8 -*-
-import re
-import sys
-from charset_normalizer import cli
-if __name__ == '__main__':
-    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
-    sys.exit(cli.cli_detect())
+version https://git-lfs.github.com/spec/v1
+oid sha256:8c116951159eb5d453e3fa38102e26366a67cac56893d9df974139597e94039d
+size 235

@@ -1,5 +1,3 @@
-2025-04-11 07:01:51.273 [error] Failed to set sticky bit on /tmp/root-code-zsh: Error: ENOENT: no such file or directory, chmod '/tmp/root-code-zsh'
-2025-04-11 07:01:52.360 [error] Failed to set sticky bit on /tmp/root-code-zsh: Error: ENOENT: no such file or directory, chmod '/tmp/root-code-zsh'
-2025-04-11 07:01:55.362 [error] Failed to set sticky bit on /tmp/root-code-zsh: Error: ENOENT: no such file or directory, chmod '/tmp/root-code-zsh'
-2025-04-11 07:01:56.337 [error] Failed to set sticky bit on /tmp/root-code-zsh: Error: ENOENT: no such file or directory, chmod '/tmp/root-code-zsh'
-2025-04-11 07:02:24.263 [error] Failed to set sticky bit on /tmp/root-code-zsh: Error: ENOENT: no such file or directory, chmod '/tmp/root-code-zsh'
+version https://git-lfs.github.com/spec/v1
+oid sha256:1056465746dfc8430fd0b33fd2202a25a5c1892e52c0e67f4e8f4ddfae003b68
+size 745

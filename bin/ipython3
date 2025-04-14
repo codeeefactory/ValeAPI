@@ -1,8 +1,3 @@
-#!/root/ValeAPI/bin/python3
-# -*- coding: utf-8 -*-
-import re
-import sys
-from IPython import start_ipython
-if __name__ == '__main__':
-    sys.argv[0] = re.sub(r'(-script\.pyw|\.exe)?$', '', sys.argv[0])
-    sys.exit(start_ipython())
+version https://git-lfs.github.com/spec/v1
+oid sha256:ae849d5ac501fff38a41c5a5e903989509c6a591cec4784745a5832f067d0ccd
+size 233

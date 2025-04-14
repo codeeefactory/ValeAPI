@@ -1,17 +1,3 @@
-2025-04-11 07:01:51.362 [info] Extension host with pid 4895 started
-2025-04-11 07:01:51.362 [info] Skipping acquiring lock for /root/ValeAPI/~/.vscode-root/User/workspaceStorage/a70c9dd12cfc8c171246462a34e08227.
-2025-04-11 07:01:51.670 [info] ExtensionService#_doActivateExtension vscode.github-authentication, startup: false, activationEvent: 'onAuthenticationRequest:github'
-2025-04-11 07:01:51.712 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
-2025-04-11 07:01:51.738 [info] ExtensionService#_doActivateExtension ms-python.python, startup: false, activationEvent: 'onLanguage:python', root cause: ms-python.debugpy
-2025-04-11 07:01:52.327 [info] ExtensionService#_doActivateExtension ms-python.debugpy, startup: false, activationEvent: 'onLanguage:python'
-2025-04-11 07:01:52.401 [info] ExtensionService#_doActivateExtension ms-python.vscode-pylance, startup: false, activationEvent: 'onLanguage:python'
-2025-04-11 07:01:53.097 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
-2025-04-11 07:01:53.145 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
-2025-04-11 07:01:53.211 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
-2025-04-11 07:01:53.373 [info] Eager extensions activated
-2025-04-11 07:01:53.401 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
-2025-04-11 07:01:53.405 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
-2025-04-11 07:02:14.941 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:jsonc'
-2025-04-11 07:02:14.953 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
-2025-04-11 07:02:15.037 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
-2025-04-11 07:02:21.959 [info] ExtensionService#_doActivateExtension vscode.debug-server-ready, startup: false, activationEvent: 'onDebugResolve'
+version https://git-lfs.github.com/spec/v1
+oid sha256:174adff0c3fc79c6c20e7ed0b8bfb7575f7943914224b18f3d8bf804b4dfd346
+size 2307
